@@ -13,7 +13,7 @@
   - HTML
   - CSS
     - Flexbox
-    - Media Queries
+    - Media Query
     - Custom Properties
 
 - [Live Demo](https://cert-ready.github.io/landing_page/)
