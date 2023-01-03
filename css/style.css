@@ -1,0 +1,219 @@
+/* Global Variables
+   ========================================================================== */
+:root {
+  --pri-font: system-ui;
+
+  --clr-dark: #1f2937;
+  --clr-light-300: #525b69;
+  --clr-light-400: #f9faf8;
+  --clr-light-500: #e5e7eb;
+  --clr-blue-400: #3882f6;
+  --clr-sand-400: #e5e7eb;
+
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 1rem;
+  --size-4: 1.25rem;
+  --size-5: 1.5rem;
+  --size-6: 1.75rem;
+  --size-7: 2rem;
+  --size-8: 3rem;
+  --size-9: 4rem;
+  --size-10: 5rem;
+
+  --pri-brd-radius: var(--size-1);
+}
+
+/* Box sizing rules
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Set core body defaults
+   ========================================================================== */
+body {
+  font-family: var(--pri-font);
+}
+
+header,
+footer {
+  background-color: var(--clr-dark);
+  padding: var(--size-3);
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1020px;
+}
+
+/* Style header
+   ========================================================================== */
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-logo {
+  color: var(--clr-light-400);
+  flex-grow: 1;
+  font-size: var(--size-5);
+}
+
+.pri-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style: none;
+}
+
+.pri-nav a {
+  color: var(--clr-light-400);
+  text-decoration: none;
+}
+
+/* Style hero card
+   ========================================================================== */
+.cardV01-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: var(--size-4);
+  justify-content: space-around;
+  padding-block: var(--size-8);
+}
+
+.cardV01 {
+  color: var(--clr-light-400);
+}
+
+.cardV01-heading {
+  margin-block: var(--size-3);
+}
+
+.cardV01-description {
+  color: var(--clr-light-500);
+}
+
+.hero-image {
+  border-radius: var(--pri-brd-radius);
+  display: block;
+  max-height: 250px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.buttonV01 {
+  background-color: var(--clr-blue-400);
+  border-radius: var(--pri-brd-radius);
+  border: 1px solid var(--clr-blue-400);
+  color: inherit;
+  margin-top: var(--size-2);
+  padding-block: var(--size-1);
+  padding-inline: var(--size-3);
+}
+
+/* Style main
+   ========================================================================== */
+
+main h2 {
+  margin-top: var(--size-8);
+  text-align: center;
+}
+
+/* Style cardV02
+   ========================================================================== */
+.cardV02-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-8);
+  justify-content: space-evenly;
+  padding: var(--size-8) var(--size-3);
+}
+
+.cardV02 {
+  width: 150px;
+}
+
+.cardV02-img {
+  width: 150px;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--pri-brd-radius);
+}
+
+.cardV02-description {
+  color: var(--clr-light-300);
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* Style quote section
+   ========================================================================== */
+
+.quote {
+  background-color: var(--clr-sand-400);
+  padding-block: var(--size-10);
+}
+
+.quote-text {
+  font-size: var(--size-6);
+  font-weight: 100;
+  padding: var(--size-2);
+  text-align: left;
+}
+
+.quote-citation {
+  text-align: right;
+  padding-right: var(--size-2);
+}
+
+/* Style call to action
+   ========================================================================== */
+.ctaV01 {
+  align-items: center;
+  background-color: var(--clr-blue-400);
+  border-radius: var(--pri-brd-radius);
+  color: var(--clr-light-400);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-5);
+  justify-content: space-around;
+  margin-block: var(--size-10);
+  padding: var(--size-8) var(--size-3);
+}
+
+.buttonV02 {
+  border-color: var(--clr-light-400);
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-block: var(--size-6);
+}
+
+.copyright {
+  color: var(--clr-light-400);
+}
+
+/* Large screens 768px and up
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  .hero {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .pri-nav {
+    flex-direction: row;
+  }
+
+  .cardV01 {
+    flex-basis: 40%;
+  }
+}
